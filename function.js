@@ -1,5 +1,5 @@
 // vim: ts=4 sts=4 sw=4 expandtab
-(function(define, undef){
+(function(define){
     define([], function(){
         var slice = Array.prototype.slice;
 

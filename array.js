@@ -1,5 +1,5 @@
 // vim: ts=4 sts=4 sw=4 expandtab
-(function(define, undef){
+(function(define){
     define([], function(){
         var toString = Object.prototype.toString;
 
@@ -212,7 +212,7 @@
 
                 for (; i < length; i++) {
                     if (i in self) {
-                        result = fun.call(undef, result, self[i], i, self);
+                        result = fun.call(void 0, result, self[i], i, self);
                     }
                 }
 
@@ -257,7 +257,7 @@
 
                 do {
                     if (i in this) {
-                        result = fun.call(undef, result, self[i], i, self);
+                        result = fun.call(void 0, result, self[i], i, self);
                     }
                 } while (i--);
 

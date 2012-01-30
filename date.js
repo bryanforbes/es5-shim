@@ -1,5 +1,5 @@
 // vim: ts=4 sts=4 sw=4 expandtab
-(function(define, undef){
+(function(define){
     define([], function(){
         // ES5 15.9.5.43
         // http://es5.github.com/#x15.9.5.43

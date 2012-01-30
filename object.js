@@ -1,5 +1,5 @@
 // vim: ts=4 sts=4 sw=4 expandtab
-(function(define, undef){
+(function(define){
     define(['./function'], function(){
         var owns = Object.prototype.hasOwnProperty;
 
@@ -24,7 +24,6 @@
             }
 
             Object.keys = function keys(object) {
-
                 if ((typeof object != "object" && typeof object != "function") || object === null) {
                     throw new TypeError("Object.keys called on a non-object");
                 }
